@@ -4,7 +4,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/log"
 
-	"github.com/Crushtain/birthdayNotification/iternal/models"
+	"github.com/Crushtain/birthdayNotification/server/iternal/models"
 )
 
 func (a *App) Register(c *fiber.Ctx) error {

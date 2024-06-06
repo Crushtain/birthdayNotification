@@ -6,7 +6,7 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 
-	"github.com/Crushtain/birthdayNotification/iternal/models"
+	"github.com/Crushtain/birthdayNotification/server/iternal/models"
 )
 
 type Database struct {
@@ -30,8 +30,14 @@ func DBConnect(dbPath string) *Database {
 }
 
 func (d *Database) GetAllUsers() []*models.User {
-	var user []*models.User
-	d.DB.Find(&user)
+	var users []*models.User
+	d.DB.Find(&users)
+	return users
+}
+
+func (d *Database) GetUserByID(id string) *models.User {
+	var user *models.User
+	d.DB.First(&user, id)
 	return user
 }
 

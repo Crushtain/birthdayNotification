@@ -4,9 +4,9 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	_ "github.com/gofiber/fiber/v2/middleware/cors"
 
-	"github.com/Crushtain/birthdayNotification/iternal/app"
-	"github.com/Crushtain/birthdayNotification/iternal/config"
-	"github.com/Crushtain/birthdayNotification/iternal/router"
+	"github.com/Crushtain/birthdayNotification/server/iternal/app"
+	"github.com/Crushtain/birthdayNotification/server/iternal/config"
+	"github.com/Crushtain/birthdayNotification/server/iternal/router"
 )
 
 func main() {

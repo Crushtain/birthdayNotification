@@ -3,8 +3,8 @@ package app
 import (
 	"github.com/gofiber/fiber/v2"
 
-	"github.com/Crushtain/birthdayNotification/iternal/config"
-	"github.com/Crushtain/birthdayNotification/iternal/database"
+	"github.com/Crushtain/birthdayNotification/server/iternal/config"
+	"github.com/Crushtain/birthdayNotification/server/iternal/database"
 )
 
 type App struct {
